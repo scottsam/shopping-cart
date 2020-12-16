@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Rambla&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fas fa-bar"></i>
+        </span>
+        <img src="images/mylogo.png" />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title">scott's collections</h1>
+        <button class="banner-btn"><a href="#product">shop now</a></button>
+      </div>
+    </header>
+    <section class="products" id="product">
+      <div class="section-title">
+        <h2>our products</h2>
+      </div>
+      <div class="products-center"></div>
+    </section>
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="cart-close">
+          <i class="fas fa-window-close">x</i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content"></div>
+        <div class="cart-footer">
+          <h3>your total : $<span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">clear cart</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a62692fa76.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@5.0.1/dist/contentful.browser.min.js"></script>
+    <script src="shop.js"></script>
+  </body>
+</html>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
